@@ -28,8 +28,6 @@ def mostrar_jugador_y_su_indice(lista_jugadores:list):
 
         mensaje = "{0} - {1}".format(jugador_nombre,i)
         print(mensaje)
-    
-    nombre_y_posicion = []
 
 def estadisticas_de_jugador(indice_jugador:int,lista_jugadores:list):
       
@@ -55,11 +53,11 @@ def generar_csv(nombre_archivo:str, lista, lista_jugadores,indice_jugador:int):
 
 lista_jugadores = leer_archivo(r"C:\Users\Marquillos\Desktop\PARCIAL 1ER PROGRAMACION\1er-PARCIAL-\Dream_Team.json") #creo una lista con los datos de todo los jugadores sin el nombre del team
 
-mostrar_jugador_y_su_indice(lista_jugadores)  #MUESTRO EL NOMBRE Y SU INDICE DE JUGADOR
+#mostrar_jugador_y_su_indice(lista_jugadores)  #MUESTRO EL NOMBRE Y SU INDICE DE JUGADOR
 
-indice_jugador = input("Ingrese el indice del jugador que desee ") #se ingresa el indice del jugadora que queremos saber sus estadisticas
+#indice_jugador = input("Ingrese el indice del jugador que desee ") #se ingresa el indice del jugadora que queremos saber sus estadisticas
 
-estadisticas_del_jugador_seleccionado = estadisticas_de_jugador(indice_jugador,lista_jugadores)
+#estadisticas_del_jugador_seleccionado = estadisticas_de_jugador(indice_jugador,lista_jugadores)
 #estadisticas_de_jugador(indice_jugador,lista_jugadores)
 
 ''' 
@@ -69,5 +67,24 @@ promedio de puntos por partido, rebotes totales, promedio de rebotes por partido
 robos totales, bloqueos totales, porcentaje de tiros de campo, porcentaje de tiros libres y porcentaje de tiros triples.
 '''
 
-print(lista_jugadores[0]["nombre"])
+#print(lista_jugadores[0]["nombre"])
 generar_csv(r"C:\Users\Marquillos\Desktop\PROGRAMACION\ARCHIVOS\EXAMEN\Dr_Team.csv",estadisticas_del_jugador_seleccionado,lista_jugadores,indice_jugador)
+
+while(True):
+    print("\n")
+    print("MENU OPCIONES:")
+    print("Punto 1")
+    print("Punto 2")
+    print("Punto 3")
+
+    opcion = input("\nElige un opcion:......")
+
+    match (opcion):
+        case "1":
+            mostrar_Nombre_y_Posicion_de_Jugadores(lista_jugadores)
+        case "2":
+            busca_en_dict_segun_clave_y_genero(lista_personajes,"F","genero")
+        case "3":
+            busca_en_dict_segun_clave_y_genero(lista_personajes,"M","altura")
+        case _:
+            break
