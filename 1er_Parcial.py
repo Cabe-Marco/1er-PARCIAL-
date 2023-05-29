@@ -91,5 +91,3 @@ match (opcion):
         imprimir_estadisticas_jugador_seleccionado(lista_jugadores)
     case "3":
         pass
-    case _:
-        break
