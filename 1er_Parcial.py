@@ -80,5 +80,4 @@ match (opcion):
     case "3":
         imprimir_estadisticas_en_el_CSV(lista_jugadores)
     case _:
-        print("Error")
-        break
+        print("Error opcion no encontrada")
