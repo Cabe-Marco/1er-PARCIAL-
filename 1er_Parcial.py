@@ -70,4 +70,4 @@ robos totales, bloqueos totales, porcentaje de tiros de campo, porcentaje de tir
 '''
 
 print(lista_jugadores[0]["nombre"])
-generar_csv(r"C:\Users\Marquillos\Desktop\PROGRAMACION\ARCHIVOS\EXAMEN\parcial_CSV.csv",estadisticas_del_jugador_seleccionado,lista_jugadores,indice_jugador)
+generar_csv(r"C:\Users\Marquillos\Desktop\PROGRAMACION\ARCHIVOS\EXAMEN\Dr_Team.csv",estadisticas_del_jugador_seleccionado,lista_jugadores,indice_jugador)
