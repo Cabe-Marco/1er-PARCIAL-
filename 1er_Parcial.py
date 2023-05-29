@@ -79,5 +79,6 @@ match (opcion):
         imprimir_estadisticas_jugador_seleccionado(lista_jugadores)
     case "3":
         imprimir_estadisticas_en_el_CSV(lista_jugadores)
-    case "0":
+    case _:
+        print("Error")
         break
