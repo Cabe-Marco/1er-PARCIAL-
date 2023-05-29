@@ -53,7 +53,7 @@ def generar_csv(nombre_archivo:str, lista, lista_jugadores,indice_jugador:int):
         texto_nombre_y_posicion += texto    
         archivo.write(texto_nombre_y_posicion)
 
-lista_jugadores = leer_archivo(r"C:\Users\Marquillos\Desktop\PROGRAMACION\ARCHIVOS\EXAMEN\dt.json") #creo una lista con los datos de todo los jugadores sin el nombre del team
+lista_jugadores = leer_archivo(r"C:\Users\Marquillos\Desktop\PARCIAL 1ER PROGRAMACION\1er-PARCIAL-\Dream_Team.json") #creo una lista con los datos de todo los jugadores sin el nombre del team
 
 mostrar_jugador_y_su_indice(lista_jugadores)  #MUESTRO EL NOMBRE Y SU INDICE DE JUGADOR
 
